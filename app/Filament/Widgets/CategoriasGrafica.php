@@ -20,7 +20,7 @@ class CategoriasGrafica extends ChartWidget
         $salud = Idea::whereHas('categoria', function ($query) {
             $query->where('nombre', 'Salud'); })->count();
         $medioAmbiente = Idea::whereHas('categoria', function ($query) {
-            $query->where('nombre', 'Medio Ambiente'); })->count();
+            $query->where('categoria_id', 4); })->count();
         $marketing = Idea::whereHas('categoria', function ($query) {
             $query->where('nombre', 'Marketing'); })->count();
 

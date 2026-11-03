@@ -32,7 +32,7 @@ class PracticaFormulario extends Page implements HasSchemas
         return $schema
             ->components([
 
-                Section::make('Miriam Doyel Lozano Matus')
+                Section::make('Méndez Jiménez Paola Melissa')
 
                 ->schema([
 
