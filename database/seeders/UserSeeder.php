@@ -20,6 +20,11 @@ class UserSeeder extends Seeder
                 'rol' => 'coordinador',
             ],
             [
+                'name' => 'Administrador',
+                'email' => 'coordinador@ideas',
+                'rol' => 'administrador',
+            ],
+            [
                 'name' => 'Asistente',
                 'email' => 'asistente@ideas',
                 'rol' => 'asistente',
