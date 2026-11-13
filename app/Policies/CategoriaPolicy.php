@@ -13,7 +13,11 @@ class CategoriaPolicy
      */
     public function viewAny(User $user): bool
     {
+<<<<<<< HEAD
         return in_array($user->rol, ['administrador', 'coordinador', 'asistente']);
+=======
+        return in_array($user->rol, ['admin', 'coordinador', 'asistente']);
+>>>>>>> 649496a72bd9272ad32d545f09b85399bfa544ca
     }
 
     /**
@@ -21,7 +25,11 @@ class CategoriaPolicy
      */
     public function view(User $user, Categoria $categoria): bool
     {
+<<<<<<< HEAD
         return in_array($user->rol, ['administrador', 'coordinador', 'asistente']);
+=======
+        return in_array($user->rol, ['admin', 'coordinador', 'asistente']);
+>>>>>>> 649496a72bd9272ad32d545f09b85399bfa544ca
     }
 
     /**
@@ -29,7 +37,11 @@ class CategoriaPolicy
      */
     public function create(User $user): bool
     {
+<<<<<<< HEAD
         return $user->rol === 'administrador';
+=======
+        return $user->rol === 'admin';
+>>>>>>> 649496a72bd9272ad32d545f09b85399bfa544ca
     }
 
     /**
@@ -37,7 +49,11 @@ class CategoriaPolicy
      */
     public function update(User $user, Categoria $categoria): bool
     {
+<<<<<<< HEAD
         return in_array($user->rol, ['administrador', 'asistente']);
+=======
+        return in_array($user->rol, ['admin', 'asistente']);
+>>>>>>> 649496a72bd9272ad32d545f09b85399bfa544ca
     }
 
     /**
@@ -45,7 +61,11 @@ class CategoriaPolicy
      */
     public function delete(User $user, Categoria $categoria): bool
     {
+<<<<<<< HEAD
         return in_array($user->rol, ['administrador']);
+=======
+        return in_array($user->rol, ['admin']);
+>>>>>>> 649496a72bd9272ad32d545f09b85399bfa544ca
     }
 
     /**
@@ -53,7 +73,11 @@ class CategoriaPolicy
      */
     public function restore(User $user, Categoria $categoria): bool
     {
+<<<<<<< HEAD
         return in_array($user->rol, ['administrador']);
+=======
+        return in_array($user->rol, ['admin']);
+>>>>>>> 649496a72bd9272ad32d545f09b85399bfa544ca
     }
 
     /**
@@ -61,6 +85,12 @@ class CategoriaPolicy
      */
     public function forceDelete(User $user, Categoria $categoria): bool
     {
+<<<<<<< HEAD
         return in_array($user->rol, ['administrador']);
     }
 }
+=======
+        return in_array($user->rol, ['admin']);
+    }
+}
+>>>>>>> 649496a72bd9272ad32d545f09b85399bfa544ca
